@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap");
+
+:root {
+  --poppins: "Poppins", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  --opensans: "Open Sans", sans-serif;
+  --secondary: #562eff;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  font-family: var(--poppins);
+  color: var(--secondary);
+  background-color: #f3f1ff;
+}
+/* predefined classes  */
+.container {
+  width: 875px;
+  margin: 0 auto;
+}
+.d-flex {
+  display: flex;
+}
+.jcc {
+  justify-content: center;
+}
+.jcb {
+  justify-content: space-between;
+}
+.jce {
+  justify-content: end;
+}
+.aic {
+  align-items: center;
+}
+.w-100 {
+  width: 100%;
+}
+/* nav css start  */
+.logo {
+  position: relative;
+}
+.logo img {
+  width: 41px;
+}
+.logo span {
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#navbar {
+  background-color: var(--secondary);
+  padding: 15px 0;
+}
+.navigation {
+  align-items: center;
+}
+.navigation div {
+  width: 50%;
+}
+.navlinks li {
+  list-style: none;
+  padding-left: 36px;
+}
+.navlinks li img {
+  height: 58px;
+  margin: auto 0;
+}
+.navlinks a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+
+.navlinks a:hover {
+  color: var(--secondary);
+  background: #ffffff;
+}
+/* top player and top blog  */
+.titles {
+  padding-bottom: 35px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.box1 {
+  background: #ffffff;
+  margin-top: 36px;
+  margin-bottom: 21px;
+  padding: 33px 33px 42px 33px;
+  border: 5px;
+}
+.playerinfo {
+  padding-left: 16px;
+  margin: auto 0;
+}
+.playerinfo h2 {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 500;
+}
+.playerinfo h4 {
+  font-size: 10px;
+  color: var(--secondary);
+  font-weight: 500;
+  text-transform: uppercase;
+  transform: translateY(-5px);
+  display: none;
+}
+.players img {
+  width: 56px;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+}
+
+.players div {
+  align-items: center;
+}
+.players div:hover h4 {
+  display: block;
+  transform: translateY(0);
+}
+
+.top_player {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d1d1d1;
+}
+.top_blog {
+  padding-top: 30px;
+}
