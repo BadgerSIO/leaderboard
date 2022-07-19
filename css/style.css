@@ -144,3 +144,50 @@ body {
 .top_blog {
   padding-top: 30px;
 }
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 26px;
+  grid-column-gap: 40px;
+}
+.blog {
+  display: flex;
+}
+.blog img {
+  width: 125px;
+}
+.bloginfo {
+  padding-left: 16px;
+}
+.bloginfo h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+.bloginfo h6 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #9f9f9f;
+}
+/* ---------------
+resposive design 
+----------------- */
+@media screen and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .navigation {
+    padding: 0 33px;
+  }
+  .box1 {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 760px) {
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
