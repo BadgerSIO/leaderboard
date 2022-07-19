@@ -234,6 +234,7 @@ resposive design
   font-family: var(--roboto);
   font-weight: 500;
   color: #1e1e1e;
+  line-height: 1.5em;
   padding: 15px 0;
 }
 .course h5 {
