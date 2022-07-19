@@ -90,6 +90,12 @@ body {
   color: var(--secondary);
   background: #ffffff;
 }
+.navham {
+  color: #f3f1ff;
+}
+.menubar {
+  display: none;
+}
 /* top player and top blog  */
 .titles {
   padding-bottom: 35px;
@@ -169,44 +175,7 @@ body {
   font-weight: 400;
   color: #9f9f9f;
 }
-/* ---------------
-resposive design 
------------------ */
-@media screen and (max-width: 992px) {
-  .container {
-    width: 100%;
-  }
-  .navigation {
-    padding: 0 33px;
-  }
-  .box1 {
-    margin: 0;
-  }
-}
-@media screen and (max-width: 760px) {
-  .navigation {
-    padding: 0 10px;
-  }
-  .box1 {
-    padding: 30px 10px;
-  }
-  .players {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .blogs {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .playerinfo h2 {
-    font-size: 14px;
-  }
-  .playerinfo h4 {
-    display: block;
-    transform: translateX(0);
-  }
-  .titles {
-    font-size: 18px;
-  }
-}
+
 /*------------------
  latest course css
  -------------------  */
@@ -273,4 +242,81 @@ resposive design
 }
 .course:hover .course_time {
   background: #f3f1ff;
+}
+/* ---------------
+resposive design 
+----------------- */
+@media screen and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .navigation {
+    padding: 0 33px;
+  }
+  .box1 {
+    margin: 0;
+  }
+  .course img {
+    width: 100%;
+  }
+  .course h2 {
+    font-size: 16px;
+  }
+  .courseinfo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .course_time {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .navigation {
+    padding: 0 10px;
+  }
+  .navlinks {
+    display: none;
+  }
+  .menubar {
+    display: block;
+    text-align: right;
+    font-size: 20px;
+  }
+  .box1 {
+    padding: 30px 10px;
+  }
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .playerinfo h2 {
+    font-size: 14px;
+  }
+  .playerinfo h4 {
+    display: block;
+    transform: translateX(0);
+  }
+  .titles {
+    font-size: 18px;
+  }
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 23px;
+  }
+  .latest_course {
+    padding: 30px 15px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 526px) {
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 20px;
+  }
+  .logo span {
+    left: 25%;
+  }
 }
